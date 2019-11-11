@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export interface IButtonProps {
   children?: React.ReactNode;
-  onClick?: (event: any) => void;
+  onClick?: (event: React.MouseEvent<HTMLInputElement>) => void;
 }
 
 const styles = {
