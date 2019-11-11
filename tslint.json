@@ -4,6 +4,8 @@
   "jsRules": {},
   "rules": {
     "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "jsx-no-string-ref": false,
     "ordered-imports": false,
     "arrow-return-shorthand": true,
     "callable-types": true,

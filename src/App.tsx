@@ -1,7 +1,8 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import './App.css';
+import React from "react";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./views/Home";
 
 const App: React.FC = () => {
   return (
@@ -15,17 +16,13 @@ const App: React.FC = () => {
           <Button variant="contained" color="secondary">
             Click me
           </Button>
-          Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+      </Router>
     </div>
   );
 };
