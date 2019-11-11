@@ -1,5 +1,5 @@
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
-import { palette } from "./palette";
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { palette } from './palette';
 
 let theme = createMuiTheme({
   palette: {
@@ -11,7 +11,7 @@ let theme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: "Bree Serif, serif, Raleway, sans-serif",
+    fontFamily: 'Bree Serif, serif, Raleway, sans-serif',
     fontSize: 12
   }
 });
